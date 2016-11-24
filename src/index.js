@@ -130,7 +130,7 @@ export class Map extends React.Component {
         });
 
         Object.keys(mapConfig).forEach((key) => {
-          if (!mapConfig[key]) {
+          if (mapConfig[key] === undefined) {
             delete mapConfig[key];
           }
         });
